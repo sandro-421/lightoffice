@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presenter</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="top">
+        <img class="topLogo topText" src="images/branding/presenter_logo.png" alt="">
+        <p class="topText" id="top">Presenter</p>
+    </div>
+
+    <div class="openFile">
+        <p style="margin-top: 0px;">Open Presentation</p>
+        <input id="path" type="text" placeholder="/path/to/folder">
+        <button onclick="openFolder()">Open</button>
+    </div>
+
+    <div class="controls">
+        <p style="margin-top: 0px;">Controls</p>
+        <div class="control"><kbd><--</kbd><p style="margin-left: 10px;">Previous Slide</p></div>      
+        <div class="control"><kbd>--></kbd><p style="margin-left: 10px;">Next Slide</p></div>
+        <div class="control"><kbd>F11</kbd><p style="margin-left: 10px;">Fullscreen toggle</p></div>
+    </div>
+</body>
+<script>
+    let html = document;
+    let fileBox = html.getElementById("path");
+    function openFolder() {
+        window.location.replace("viewer.html#" + fileBox.value);
+    }
+</script>
+</html>

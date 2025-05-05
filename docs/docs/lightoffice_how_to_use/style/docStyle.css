@@ -1,0 +1,56 @@
+/* -------- LightOffice Docs CSS3 ------- */
+/* -------------------------------------- */
+/* ---- Optimised for use with Docs ----- */
+/* Use this file to change document style */
+
+:root {
+    /* document background color */
+    --background: white;
+
+    /* document text/element color */
+    --color: black;
+}
+
+body{
+    /* Ignore this part */
+    background-color: var(--background);
+    color: var(--color);
+
+    /* document font */
+    font-family: sans-serif;
+
+    padding: 50px;
+}
+
+/* Font sizes (Recomended to not change) */
+#top {font-size: 70px; font-weight: bold; text-align: center;}
+#sub {font-size: 40px; font-weight: bold; text-align: center;}
+#text{font-size: 30px; font-weight: normal;}
+#tiny{font-size: 20px; font-weight: normal;}
+
+/* document Components (Recomended to not change) */
+
+.box-border /* used with <div> */ {
+    border: gray 1px solid;
+    border-radius: 10px;
+    margin: 100px;
+}
+
+.box /* used with <div> */ {
+    display: inline;
+    margin: 100px;
+}
+
+.line /* used with <div> */ {
+    width: 500px;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto; 
+}
+
+img {
+    max-width: 800px;
+}
+
+i{color: green;}
+b{color: red;}

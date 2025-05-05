@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docs</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="top">
+        <img class="topLogo topText" src="images/branding/docs-logo.png" alt="">
+        <p class="topText" id="top">Docs</p>
+    </div>
+
+    <div class="openFile">
+        <p style="margin-top: 0px;">Open Document</p>
+        <input id="path" type="text" placeholder="/path/to/folder">
+        <button onclick="openFolder()">Open</button>
+    </div>
+</body>
+<script>
+    let html = document;
+    let fileBox = html.getElementById("path");
+    function openFolder() {
+        window.location.replace("viewer.html#" + fileBox.value);
+    }
+</script>
+</html>

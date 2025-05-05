@@ -1,0 +1,98 @@
+:root {
+    --presenter-acent: #810000;
+    --writer-acent: #000cb1;
+    --light: white;
+    --dark: black;
+
+    --border: 1px solid var(--light);
+    --border-radius: 10px;
+    --trans: 200ms;
+
+    --component-width: 400px; 
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: sans-serif;
+}
+
+input, button {
+    transition: var(--trans);
+    background-color: var(--dark);
+    color: var(--light);
+    border: 1px solid var(--light);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    font-size: 17px;
+}
+
+input:hover, button:hover {
+    transition: var(--trans);
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+input{cursor: text;}
+button{cursor: pointer;}
+
+kbd {
+    padding: 2px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    height: max-content;
+}
+
+/* Text sizes */
+
+#top {font-size: 50px;}
+#sub {font-size: 30px;}
+#text{font-size: 17px;}
+#tiny{font-size: 12px;}
+
+/* Sections */
+
+.top{
+    display: flex;
+    margin-left: -10px;
+    margin-right: -8px;
+    margin-top: -10px;
+    background-color: var(--writer-acent);
+    height: 60px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.openFile{
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin-bottom: 10px;
+    width: var(--component-width);
+}
+
+.controls{
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin-bottom: 10px;
+    width: var(--component-width);
+}
+
+.presenterBar{
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.presentationFrame {
+    height: 92vb;
+    width: 900px;
+    border-radius: var(--border-radius);
+}
+
+/* Components */
+
+.topLogo{width: 50px; height: 50px;}
+.topText{margin-left: 10px;}
+.control{display: flex; align-items: center; margin-top: -20px;}

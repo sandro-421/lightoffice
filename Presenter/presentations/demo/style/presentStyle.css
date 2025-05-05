@@ -1,0 +1,71 @@
+/* ------- LightOffice Presenter CSS3 ------- */
+/* ------------------------------------------ */
+/* ---- Optimised for use with Presenter ---- */
+/* Use this file to change presentation style */
+
+:root {
+    /* Slide background color */
+    --background: white;
+
+    /* Slide background image (opotional) */
+    --background-image: none;
+
+    /* Slide text/element color */
+    --color: black;
+}
+
+body{
+    /* Ignore this part */
+    background-color: var(--background);
+    background-image: var(--background-image);
+    color: var(--color);
+
+    /* Slide font */
+    font-family: sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Font sizes (Recomended to not change) */
+#top {font-size: 200px; font-weight: bold; margin-bottom: 10px;}
+#sub {font-size: 100px; font-weight: bold; margin-bottom: -20px;}
+#text{font-size: 30px; font-weight: normal;}
+#tiny{font-size: 20px; font-weight: normal;}
+
+/* Slide types (Recomended to not change) */
+
+.titleSlide{
+    text-align: center;
+}
+
+
+/* Slide Components (Recomended to not change) */
+
+.box-border /* used with <div> */ {
+    border: gray 1px solid;
+    border-radius: 10px;
+    margin: 100px;
+}
+
+.box /* used with <div> */ {
+    display: inline;
+    margin: 100px;
+    width: 900px;
+}
+
+.line /* used with <div> */ {
+    width: 500px;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto; 
+}
+
+img {
+    object-fit: cover;
+    object-position: center center;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}

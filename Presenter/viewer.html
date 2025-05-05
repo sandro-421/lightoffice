@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presenter</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body id="body">
+    <iframe class="presentationFrame" id="presentationFrame" frameborder="0"></iframe>
+
+    <div class="presenterBar">
+        <button onclick="prev()" class="presenterButtons" id="firstButton"><img width="20px" height="18px" src="images/icons/prev.svg" alt=""></button>
+        <button onclick="next()" class="presenterButtons"><img width="20px" height="18px" src="images/icons/next.svg" alt=""></button>
+        <button onclick="full()" class="presenterButtons"><img width="20px" height="18px" src="images/icons/full.svg" alt=""></button>
+        <button onclick="notes()" class="presenterButtons"><img width="20px" height="18px" src="images/icons/notes.svg" alt=""></button>
+        <p style="margin-left: 10px; font-size: 17px;">Slide:</p>
+        <p id="slideCounter" style="font-size: 17px;">0</p>
+    </div>
+</body>
+<script defer src="scripts/slideshow.js"></script>
+</html>
